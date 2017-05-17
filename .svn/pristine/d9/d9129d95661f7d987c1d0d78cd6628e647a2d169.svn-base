@@ -1,0 +1,7 @@
+.typeCon span.selected{
+		color: #fff;
+    background-color: #FF6845;
+}
+.appointForm{
+	display: none;
+}

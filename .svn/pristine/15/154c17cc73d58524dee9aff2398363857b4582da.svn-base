@@ -1,0 +1,200 @@
+@charset 'utf-8';
+    .hotyqOne{
+        //background-image: url('../style/img/hotyqOne.jpg');
+        background-size:cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        .hotyqOne_cons{
+            width: 11rem;
+            height: 100%;
+            margin:0 auto;
+            position: relative;
+            .hotyqOneTit{
+                width: 8.47rem;
+                height: 0.52rem;
+                //background-image: url('../style/img/hotyqOneTit.png');
+                background-size: 100%;
+                position: absolute;
+                top: 0.8rem;
+                left: 0;
+            }
+            .ab{
+                width: 2rem !important;
+            }
+        }
+    }
+    .hotyqDownBox{
+        width: 2.26rem;
+        height: 4.29rem;
+        position: absolute;
+        top: 2.15rem;
+        right: 0;
+        .hotyqDownImg{
+            width: 100%;
+            height: 2.76rem;
+            img{
+                width: 100%;
+            }
+        }
+        .hotyqDownIphone{
+            width: 100%;
+            height: 0.58rem;
+            margin-top: 0.2rem;
+            img{
+                width: 100%;
+            }
+        }
+        .hotyqDwonAddrio{
+            width: 100%;
+            height: 0.58rem;
+            margin-top: 0.2rem;
+            img{
+                width: 100%;
+            }
+        }
+    }
+    .hotyqWordsBox{
+        width: 5.6rem;
+        height: 6.18rem;
+        color: #fff;
+        position: absolute;
+        top: 2.15rem;
+        right: 2.52rem;
+        background-size:100%;
+        font-size: 0.23rem;
+        line-height: 0.335rem;
+        padding: 0.2rem 0.2rem 0 0.4rem;
+    }
+    .hotyqTwo{
+        //background-image: url('../style/img/hotyqTwo.jpg');
+        background-size:cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        .hotyqTwo_cons{
+            width: 11rem;
+            height: 100%;
+            margin:0 auto;
+            position: relative;
+            .hotyqTwoTit{
+                width: 6.78rem;
+                height: 0.56rem;
+                //background-image: url('../style/img/hotyqTwoTit.png');
+                background-size: 100%;
+                position: absolute;
+                top: 0.8rem;
+                left: 0;
+            }
+            .hotyqTwoWordsBox{
+                width: 3.72rem;
+                height: 2.09rem;
+                position: absolute;
+                top: 2.32rem;
+                left: 0rem;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .hotyqThree{
+        //background-image: url('../style/img/hotyqThree.jpg');
+        background-size:cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        .hotyqThree_cons{
+            width: 11rem;
+            height: 100%;
+            margin:0 auto;
+            position: relative;
+            .hotyqThreeTit{
+                width: 6.78rem;
+                height: 0.56rem;
+                //background-image: url('../style/img/hotyqThreeTit.png');
+                background-size: 100%;
+                position: absolute;
+                top: 0.8rem;
+                left: 0;
+            }
+            
+            
+        }
+    }
+    .hotyqFour{
+        //background-image: url('../style/img/hotyqFour.jpg');
+        background-size:cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        .hotyqFour_cons{
+            width: 11rem;
+            height: 100%;
+            margin:0 auto;
+            position: relative;
+            .hotyqFourTit{
+                width: 8.1rem;
+                height: 0.55rem;
+                //background-image: url('../style/img/hotyqFourTit.png');
+                background-size: 100%;
+                position: absolute;
+                top: 0.8rem;
+                left: 0;
+            }
+            .hotyqFourPepoleBox{
+                width: 6.33rem;
+                height: 6.10rem;
+                position: absolute;
+                top: 1.8rem;
+                right: 0.18rem;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .hotyqFive{
+        //background-image: url('../style/img/hotyqFive.jpg');
+        background-size:cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        .hotyqFive_cons{
+            width: 11rem;
+            height: 100%;
+            margin:0 auto;
+            position: relative;
+            .hotyqFiveTit{
+                width: 7.08rem;
+                height: 0.55rem;
+                //background-image: url('../style/img/hotyqFiveTit.png');
+                background-size: 100%;
+                position: absolute;
+                top: 0.8rem;
+                left: 0;
+            }
+        }
+    }
+    .hotyqSix{
+        //background-image: url('../style/img/hotyqSix.jpg');
+        background-size:cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        .hotyqSix_cons{
+            width: 11rem;
+            height: 100%;
+            margin:0 auto;
+            position: relative;
+            .hotyqSixTit{
+                width: 8.48rem;
+                height: 0.53rem;
+                //background-image: url('../style/img/hotyqSixTit.png');
+                background-size: 100%;
+                position: absolute;
+                top: 0.8rem;
+                left: 0;
+            }
+            
+        }
+    }
+
+.paginations{
+    position: fixed !important;
+    right: 2rem !important;
+}

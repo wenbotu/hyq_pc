@@ -1,0 +1,396 @@
+@import 'global.scss';
+.swiper-container{
+    width: 100%;
+    overflow: hidden;
+    .swiper-wrapper{
+        .swiper-slide{
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            position: relative;
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+            
+        }
+    }
+}
+
+.swiper-pagination{
+}
+.content{
+    //min-width: 1150px;
+    width: 11.5rem;
+    margin:0 auto;
+    position: relative;
+    height:100%;
+}
+.content1{
+    width: 11.5rem;
+   // margin:0 auto;
+    height: 100%;
+    position: relative;
+    top: 50%;
+    left: 50%;
+   -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%); 
+    max-height:100%;
+    overflow: hidden;
+}
+.content2{
+    width: 11.5rem;
+    margin:0 auto;
+    position: relative;
+}
+.hotmiOne{
+    position: relative;
+    width:100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    //background-image: url('../style/img/hotmibg1.jpg');
+    .oneright{
+        width: 6.8rem;
+        float: right;
+        height: 100%;
+        position: relative;
+        .hotmiOne1{
+            float: right;
+            width: 1.47rem;
+            height: 0.5rem;
+            margin:0.5rem 0rem 0.3rem 0rem;
+        }
+        .hotmiOne2{
+            clear: both;
+            float: right;
+            width: 5.98rem;
+            height: 0.52rem;
+            margin:0rem 0rem 0.1rem 0rem;
+        }
+        
+        .hotmiOne4{
+            float: right;
+            position: absolute;
+            bottom:0.1rem;
+            right:0rem;
+            width: 3.45rem;
+            height: 3.73rem;
+        }
+        .onerightLine{
+            clear: both;
+            float: right;
+            display: block;
+            width:50px;
+            height: 2px;
+            background: #fff;
+            margin-bottom: 0.2rem;
+            
+        }
+        .onerightTxt{
+            float: right;
+            width: 6rem;
+            color: #fff;
+            font-size: 0.2rem;
+            line-height: 0.36rem;
+            padding:0.1rem 0rem 0.1rem 0rem;
+            letter-spacing: 1px;
+        }
+    }
+    .oneleft{
+        width: 4.7rem;
+        float: left;
+        height:100%;
+        position: relative;
+        .hotmiOne3Con{
+            float: right;
+            position: absolute;
+            bottom: 0rem;
+            right:0.3rem;
+            width: 4.12rem;
+            height: 7.2rem;
+            overflow: hidden;
+        }
+        .hotmiOne3{
+            width: 4.12rem;
+            height: 8.35rem;
+        }
+    }
+    
+}
+.laycenter{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+   -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%); 
+    max-height:100%;
+    overflow: hidden;
+}
+.hotmiTwo{
+    //@include flexbox-vertical-center();
+    background-color: #fff;
+    .hotmiTwo0{
+        width: 4.5rem;
+        height: 0.54rem;
+        margin:0.5rem 0rem 0.2rem 0rem;
+    }
+    .maskcon{
+        width: 11.5rem;
+        height: auto;
+        overflow: hidden;
+        margin:0.2rem 0rem 0.6rem 0rem;
+        ul{
+            cursor: pointer;
+            li{
+                position: relative;
+                overflow: hidden;
+                cursor: default;
+                img.hotmiTwo1,img.hotmiTwo4{
+                    width: 2.8rem;
+                    height: 3.8rem;
+                }
+                img.hotmiTwo2,img.hotmiTwo3,img.hotmiTwo5,img.hotmiTwo6{
+                    width: 2.6rem;
+                    height: 1.87rem;
+                }
+                img.hotmiTwo7,img.hotmiTwo8{
+                    width: 5.46rem;
+                    height: 2rem;
+                }
+                div.maskdiv{
+                   position: absolute;
+                   text-align: center;
+                   width:100%;
+                   height: 100%;
+                   top:0rem;
+                   left:0rem;
+                   opacity: 0;
+                   //display: none;
+                   /*transition: all 0.8s;
+                   -moz-transition: all 0.8s;; 
+                    -webkit-transition: all 0.8s;; 
+                    -o-transition: all 0.8s;; */
+                   //transition-duration: 0.8s;
+                    //-moz-transition-duration: 0.8s; /* Firefox 4 */
+                    //-webkit-transition-duration: 0.8s; /* Safari 和 Chrome */
+                   // -o-transition-duration: 0.8s; /* Opera */
+                  p{
+                     span{
+                           display: block;
+                           font-size: 0.2rem;
+                           color: #fff;
+                           padding-top:0.04rem;
+                       } 
+                  }
+                }
+            }
+        }
+        ul.maskul1{
+            width: 2.8rem;
+            float: left;
+            overflow: hidden;
+            li{
+                width:2.8rem;
+                height: 3.8rem;
+                float:left;
+                div.maskdiv{
+                    
+                }
+            }
+        }
+        ul.maskul2{
+            width: 2.74rem;
+            float: left;
+            li{
+                width:2.6rem;
+                height: 1.87rem;
+                margin:0rem 0.07rem 0.07rem 0.07rem;
+                float:left;
+                div.maskdiv{
+                    //top:-260px;
+                    //left: -187px;
+                }
+            }
+        }
+        ul.maskul3{
+            width: 100%;
+            li{
+                width:5.46rem;
+                height: 2rem;
+                margin:0rem 0.09rem 0.07rem 0rem;
+                float:left;
+                div.maskdiv{
+                   // top:-546px;
+                    //left: -200px;
+                }
+            }
+        }
+    }
+    
+}
+.hotmiThree{
+    background-color: #fff5e1;
+    .hotmiThree1{
+        display: block;
+        width: 4.56rem;
+        height: 0.71rem;
+        margin:0.3rem 0rem 0.1rem 0rem;
+    }
+    .hotmiThree2{
+        width: 11.42rem;
+        height: 6.74rem;
+    }
+}
+
+.hotmiFour{
+    background-color: #fff;
+    height: auto;
+    .fourtop{
+        width: 100%;
+        //height: 50%;
+        height: 8rem;
+        background-color: #ffffff;
+        .hotmiFour1{
+            width: 4.43rem;
+            height: 0.85rem;
+            margin:0.4rem 0rem 0.3rem 0rem;
+        }
+        ul.hotmiFourul{
+            width: 100%;
+            /*font-family: "微软雅黑";*/
+            margin-top:1rem;
+            li{
+                float:left;
+                width: 2.8rem;
+                text-align: center;
+                img{
+                    width: 2.1rem;
+                }
+                h3{
+                    color: #333333;
+                    font-size: 0.22rem;
+                    line-height: 0.3rem;
+                    padding:0.05rem 0rem 0.1rem 0rem;
+                    text-align: center;
+                    //margin-right:0.8rem;
+                }
+                p{
+                    color: #8c8c8c;
+                    font-size: 0.16rem;
+                    line-height: 0.24rem;
+                    padding:0.02rem 0 0.02rem 0;
+                    text-align: center;
+                    //margin-right:0.8rem;
+                }
+            }
+            li:nth-of-type(4){
+                width: 2.8rem;
+            }
+        }
+    }
+    .fourmid{
+        /*position:absolute;
+        bottom:0.6rem;
+        left:0rem;
+        width: 100%;
+        height: 35%;*/
+        width: 100%;
+        height:4rem ;
+        background-color: #f7f7f7;
+        .fourmidleft{
+            float: left;
+            width: 5.3rem;
+            .hotmiFour6{
+                width: 2.29rem;
+                height:0.98rem ;
+                margin:0.7rem 0rem 0.2rem 0rem;
+            }
+            .hotmiFour7{
+                width: 5.21rem;
+                height:1.05rem ;
+            }
+        }
+        .fourmidright{
+            width: 5.6rem;
+            float: left;
+            text-align: right;
+            margin-left:0.4rem;
+            .hotmiFour8{
+                float: left;
+                width:2.1rem;
+                height: 2.1rem;;
+                margin:0.7rem 0.3rem 0.2rem 0.6rem;
+            }
+            .hotmiFour9{
+                float: right;
+                width: 2.25rem;
+                height: 0.58rem;
+                margin:0.7rem 0rem 0.2rem 0.2rem;
+                img{
+                    width: 2.25rem;
+                    height: 0.58rem;
+                }
+            }
+            .hotmiFour10{
+                float: right;
+                width: 2.25rem;
+                height: 0.58rem;
+                margin:0rem 0rem 0.3rem 0.2rem;
+                cursor: pointer;
+                img{
+                    width: 2.25rem;
+                    height: 0.58rem;
+                }
+            }
+            .hotmiFour11{
+                width: 4.86rem;
+                height: 0.41rem;
+            }
+        }
+    }
+    .fourbot{
+        position: absolute;
+        bottom: 0rem;
+        left: 0rem;;
+        width: 100%;
+        height: 5%;
+        //height: 0.6rem;
+        background-color: #454545;
+        p{
+            float: left;
+            width: 6.5rem;
+            color: #ffffff;
+            font-size: 0.12rem;
+            margin-top:0.1rem;
+        }
+        ul{
+            float: right;
+            width: 5rem;
+            text-align: right;
+            margin-top:0.1rem;
+            li{
+                float: right;
+                color: #ffffff;
+                font-size: 0.12rem;
+                margin-right:0.1rem;
+            }
+        }
+    }
+}

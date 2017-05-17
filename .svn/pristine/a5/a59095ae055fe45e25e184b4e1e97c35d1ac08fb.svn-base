@@ -1,0 +1,305 @@
+@charset 'utf-8';
+@import "global.scss";
+.hotfanContain{
+    width:100%;
+    height:100%;
+    minWidth:11.00rem;
+    minHeight:8.50rem
+}
+.paginationSet{
+    span{
+        margin:0.10rem auto !important;
+    }
+}
+.paginationSet.swiper-pagination span.swiper-pagination-bullet-active{
+    background:red;
+    
+}
+.nav_contain{
+    width: 100%;
+    margin:0 auto;
+    height:100%;
+    background-color:#fe6469;
+    background-size:9.98rem 5.20rem;
+    position:relative;
+    .topImg{
+        width: 6.85rem;
+        height: 3.49rem;
+        //background:url(../style/img/hotFanNavtop.png) no-repeat left top;
+        position:absolute;
+        top:0;
+        right:1.56rem;
+        background-size:6.85rem 3.49rem;
+    }
+    .botImg{
+        width: 12.41rem;
+        height: 6.2rem;
+        //background:url(../style/img/hotFanNavBot.png) no-repeat left top;
+        position:absolute;
+        background-size:12.41rem 6.2rem ;
+        bottom:0;
+        right:-3.2rem;
+    }
+    
+    
+}
+.navDes{
+    width: 11.00rem;
+    height: 100%;
+    margin:0 auto;
+    position:relative;
+    .logo{
+        position:absolute;
+        width: 2.35rem;
+        height: 0.71rem;
+        top:1rem;
+        left: 0;
+        //background:url(../style/img/hotfanLogo.png) no-repeat left top;
+        background-size: 2.35rem 0.71rem;
+    }
+    .des{
+        display: block;
+        width: 7.2rem;
+        padding:0.35rem 0.40rem 0.35rem 0.30rem;
+        line-height: 0.4rem;
+        background:rgba(255,255,255,0.1);
+        font-size: 0.2rem;
+        color: white;
+        position:absolute;
+        left: 0;
+        top:2.4rem;
+        z-index: 5;
+    }
+}
+.downContain{
+    width: 100%;
+    height: 100%;
+    background-color:#f7f7f7;
+    background-size:6.62rem 3.09rem,3.36rem 3.94rem;
+    background-repeat: no-repeat, no-repeat;  
+    background-position:0.76rem 0, right bottom;
+    //background:url(../style/img/hotFanLeftTop.png) 0.76rem 0 no-repeat,
+    //url(../style/img/hotFanRightBot.png) right bottom no-repeat ;
+}
+
+.downDes{
+    width: 11.00rem;
+    height: 100%;
+    margin:0 auto;
+    position:relative;
+    .hotFanDownTit{
+        position:absolute;
+        width: 6.97rem;
+        height: 0.58rem;
+        left:0;
+        top:1.25rem;
+        //background:url(../style/img/hotFanDownTit.png) no-repeat 0 0;
+        background-size:6.97rem 0.58rem;
+    }
+    .hotFanDownPhone{
+        position:absolute;
+        width: 2.66rem;
+        height: 5.52rem;
+        top:2.15rem;
+        left:0.9rem;
+        //background: url(../style/img/hotFanDownPhone.png) no-repeat 0 0;
+        background-size: 2.66rem 5.52rem;
+    }
+     
+    .erWeiMa{
+        position:absolute;
+        width: 1.92rem;
+        height: 2.3rem;
+        left: 0;
+        top:0;
+        //background:url(../style/img/erWeiMa.png) no-repeat 0 0;
+        background-size:1.92rem 2.3rem;
+    }
+    .downBtn{
+        position:absolute;
+        right:0.10rem;
+        top:5.3rem;
+        width: 4.50rem;
+        height: 2.55rem;
+    }
+    .downCon{
+        font-size: 0.2rem;
+        color:#fe6469;
+        line-height: 0.4rem;
+        width: 6.50rem;
+        position:absolute;
+        top:2.40rem;
+        right:0.10rem;
+    }
+    .android{
+        position:absolute;
+        right: 0;
+       display: block;
+       width: 2.04rem;
+       height: 0.52rem;
+       margin-top:1.65rem;
+       background-size:2.04rem 0.52rem;
+       //background: url(../style/img/hotFanAndroid.png) no-repeat 0 0;
+    }
+    .ios{
+        right:0;
+        margin-top:0.77rem;
+        position:absolute;
+       display: block;
+       width: 2.04rem;
+       height: 0.52rem;
+       background-size:2.04rem 0.52rem;
+       //background: url(../style/img/hotFanIos.png) no-repeat 0 0; 
+    }
+}
+.desContain{
+    width: 100%;
+    height: 100%;
+    .desDes{
+        width: 11.00rem;
+        margin:0 auto;
+        position:relative;
+    }
+}
+.desTit{
+    position:absolute;
+    top:1.28rem;
+    left:0;
+    img{
+        width: 7.74rem;
+        height: 0.6rem;
+    }
+}
+.eggImg{
+    width: 11.00rem;
+    position:absolute;
+    left: 0;
+    top:2.86rem;
+    img{
+        width: 3rem;
+        height: 3.5rem;
+    }
+    padding: 0 0.25rem;
+    @include flexbox(row,nowrap,space-between);
+}
+.JoinOrgContain{
+    width: 100%;
+    height: 100%;
+}
+.JoinOrgDes{
+    width: 11.00rem;
+    margin:0 auto;
+    height: 100%;
+}
+.jsoinOrgTit{
+    width: 100%;
+    height:100%;
+    background-color:#f7f7f7;
+    position:relative;
+    padding:0.76rem 0 0.12rem 0;
+    text-align: center;
+}
+.jsoinOrgImg{
+    margin:0 auto;
+    width: 5.40rem;
+    height: 0.45rem;
+    //background: url(../style/img/hotFanOrgTit.jpg) no-repeat;
+    background-size:5.39rem 0.45rem;
+}
+.jsoninOrgs2{
+    width: 5.5rem;
+    height: 4.7rem;
+    background-size: 5.5rem 4.7rem;
+    margin-top:0.56rem;
+}
+.jsoninOrgs{
+    margin-top:0.6rem;
+    padding-bottom:0.1rem;
+    background-color:#f7f7f7;
+    img{
+        width: 11.00rem;
+        height: auto;
+    }
+}
+.jsoninOrgMore{
+    display: block;
+    margin:0 auto;
+    font-size: 16px;
+    color:#666666;
+    line-height: 1;
+    width: 1.6rem;
+    height: 0.34rem;
+    line-height: 0.34rem;
+    border:1px solid #666666;
+    margin-top:0.25rem;
+    font-size: 0.14rem;
+    i{
+        margin-left:0.04rem;
+        font-size: 0.16rem;
+        color:#777777;
+    }
+}
+.JoinOrgDes{
+    width: 11.00rem;
+    height: 5.00rem;
+    position:relative;
+    .JoinLogo{
+        position:absolute;
+        left: 0;
+        top:0.80rem;
+        width: 2.15rem;
+        height: 0.79rem;
+        //background:url(../style/img/hotFanJoinLogo.png) no-repeat 0 0;
+        background-size:2.15rem 0.97rem;
+        
+    }
+    .JoinTxt{
+        position:absolute;
+        left: 0;
+        top:2.23rem;
+        width: 4.74rem;
+        height: 1.21rem;
+        //background: url(../style/img/hotFanJoinTxt.png) no-repeat 0 0;
+        background-size:4.74rem 1.21rem;
+    }
+    .JoinErweima{
+          position:absolute;
+            width: 2.14rem;
+            height: 2.55rem;
+            right: 3.06rem;
+            top:0.80rem;
+            //background:url(../style/img/erWeiMa.png) no-repeat 0 0;
+            background-size:2.14rem 2.55rem;
+    }
+    .ios{
+        position:absolute;
+        display: block;
+       width: 2.26rem;
+       height: 0.58rem;
+       top:1.65rem;
+       right:0.19rem;
+       //background: url(../style/img/hotFanIos.png) no-repeat 0 0; 
+       background-size:2.26rem 0.58rem;
+    }
+    .android{
+       position:absolute;
+       top:2.68rem;
+       right: 0.19rem;
+       display: block;
+       width: 2.26rem;
+       height: 0.58rem;
+       //background: url(../style/img/hotFanAndroid.png) no-repeat 0 0;
+       background-size:2.26rem 0.58rem;
+    }
+}
+.footer{
+    position:absolute;
+    bottom:0rem;
+    left: 0;
+    right: 0;
+}
+.joinOrgContain2{
+    position:relative;
+      width: 100%;
+      height: 100%;
+}

@@ -1,0 +1,40 @@
+#pages .ant-pagination{
+	font-size: 14px;
+}
+#pages ul li.ant-pagination-item-active{
+	border:1px solid #f74e47;
+    background-color: #f74e47;
+}
+#pages ul li.ant-pagination-item-active a {
+    color: #fff;
+}
+#pages ul li.ant-pagination-item-active:hover{
+	background-color: #f74e47;
+	border:1px solid #f74e47;
+}
+#pages ul li.ant-pagination-item-active:hover a{
+	color: #fff;
+}
+#pages ul li.ant-pagination-disabled:hover{
+	background-color: #fff;
+	border: 1px solid #d4d4d4;
+	opacity: 0.7;
+}
+#pages ul li.ant-pagination-disabled:hover a{
+	color: #f74e47;
+}
+#pages ul li.ant-pagination-jump-prev:after{
+	color: #f74e47;
+}
+#pages ul li.ant-pagination-jump-next:after{
+	color: #f74e47;
+}
+#pages ul li.ant-pagination-jump-prev:hover .ant-pagination-jump-prev:after{
+	color: #f74e47;
+}
+#pages ul li.ant-pagination-jump-next:hover .ant-pagination-jump-next:after{
+	color: #f74e47;
+}
+:root #pages .ant-pagination-prev a:after, :root  #pages .ant-pagination-next a:after{
+	font-size: 20px;
+}

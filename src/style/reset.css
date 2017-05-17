@@ -1,0 +1,9 @@
+body{
+}
+.swiper-reset .swiper-pagination-bullet{
+	background: transparent !important;
+}
+.swiper-reset .swiper-pagination-bullet-active{
+	 background: #fff !important;
+}
+

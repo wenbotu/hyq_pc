@@ -1,0 +1,85 @@
+@charset 'utf-8';
+@mixin flexbox($row,$wrap,$center) {
+    /*样式兼容*/
+    display: box;
+    /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;
+    /* OLD - Android 4.4- */
+    display: -webkit-box;
+    /* NEW - Chrome */
+    display: flex;
+    /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;
+    /* TWEENER - IE 10 */
+    display: -webkit-flex;
+    /*横向排列（主轴）*/
+    -webkit-box-orient: horizontal;
+    /*暂时写死*/
+    flex-direction: $row;
+    -o-flex-direction: $row;
+    -ms-flex-direction: $row;
+    -moz-flex-direction: $row;
+    -webkit-flex-direction: $row;/*column 纵轴排列*/
+    /*是否换行*/
+    flex-wrap: $wrap;
+    -o-flex-wrap: $wrap;
+    -ms-flex-wrap: $wrap;
+    -moz-flex-wrap: $wrap;
+    -webkit-flex-wrap: $wrap;
+    /* 父元素-水平居中（主轴是横向才生效） */
+    /* 09版 */
+    -webkit-box-pack: justify;
+    /* 12版 */
+    justify-content: $center;
+    -o-justify-content: $center;
+    -ms-justify-content: $center;
+    -moz-justify-content: $center;
+    -webkit-justify-content: $center;
+    /* 其它取值如下：
+    align-items  主轴原点方向对齐
+    flex-end        主轴延伸方向对齐
+    space-between   等间距排列，首尾不留白
+    space-around    等间距排列，首尾留白
+   */
+}
+@mixin flexbox-vertical-center(){
+    display: box; 
+    display: -moz-box;          
+    display: -webkit-box;   
+    display: flex;     
+    display: -ms-flexbox;   
+    display: -webkit-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -moz-align-items: center;
+    -webkit-align-items: center;
+}
+@mixin flexbox2 ($box-pack,$justify-content,$box-align,$align-items) {
+    display: box; 
+    display: -moz-box;          
+    display: -webkit-box;   
+    display: flex;     
+    display: -ms-flexbox;   
+    display: -webkit-flex;
+    box-pack: $box-pack;
+    -ms-box-pack:$box-pack;
+    -moz-box-pack: $box-pack;
+    -webkit-box-pack: $box-pack;
+    justify-content: $justify-content;
+    -ms-justify-content: $justify-content;
+    -moz-justify-content: $justify-content;
+    -webkit-justify-content: $justify-content;
+    -webkit-box-align: $box-align;
+    align-items: $align-items;
+    -moz-align-items: $align-items;
+    -webkit-align-items: $align-items;
+    
+}
+@mixin flexwrap(){
+    box-lines: multiple;
+    -moz-box-lines: multiple; /*Firefox*/
+    -webkit-box-lines: multiple; /*Safari,Opera,Chrome*/
+    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+}

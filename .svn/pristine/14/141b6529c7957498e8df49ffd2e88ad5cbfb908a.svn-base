@@ -1,0 +1,51 @@
+@charset 'utf-8';
+@import '../global.scss';
+.content{
+    width: 1100px;
+    margin: 0 auto;
+    @include flexbox2(justify,space-between,center,center);
+    @include flexwrap();
+    background-color: #fff;
+    padding-top: 40px;
+    padding-bottom: 60px;
+    a{
+        display: block;
+        &:nth-of-type(3){
+            margin-top: 20px;
+        }
+        &>div{
+            &:hover{
+                box-shadow: 0 0 15px rgba(0,0,0,0.3);
+            }
+            width: 540px;
+            height: 400px;
+            border: 1px solid #eee;
+            border-radius: 10px;
+            padding: 9px;
+            div{
+                margin-top: 20px;
+                position: relative;
+                padding: 10px 10px 5px 15px;
+                img{
+                    &:nth-of-type(1){
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                    }
+                    &:nth-of-type(2){
+                        position: absolute;
+                        right: 0;
+                        bottom: 0;
+                    }
+                }
+                p{
+                    color:#333333;
+                    font-size: 18px;
+                    line-height: 30px;
+                }
+            }
+            
+        }
+    }
+    
+}

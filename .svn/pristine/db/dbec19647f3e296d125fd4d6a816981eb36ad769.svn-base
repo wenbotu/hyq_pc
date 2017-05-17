@@ -1,0 +1,46 @@
+@charset 'utf-8';
+.joinUs{
+    .txt{
+        color: #171717;
+        font-size: 15px;
+        line-height: 34px;
+        margin:40px 0px;
+    }
+    .imgList{
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        margin-bottom: 20px;
+        img{
+            width: 362px;
+            height: 240px;
+            float: left;
+            margin-bottom: 7px;
+            margin-right:7px;
+        }
+        img:nth-child(3n){
+            margin-right:0px;
+        }
+    }
+    .workLink{
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        margin-bottom: 20px;
+        span{
+            color: #171717;
+            font-size:28px;
+            float: left;
+        }
+        a{
+            width: 100px;
+            height: 40px;
+            float: left;
+            margin-left:20px;
+            img{
+                width: 100px;
+                height: 40px;
+            }
+        }
+    }
+}

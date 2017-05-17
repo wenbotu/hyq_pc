@@ -1,0 +1,465 @@
+@charset 'utf-8';
+@import 'global.scss';
+@mixin line_over2{
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-all;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+.hotmi-service{
+    .banner{
+        width: 100%;
+        height: 115px;
+        margin-bottom: 30px;
+        .swiperContainer{
+            width: 100%;
+            .swiperSlide{
+                width: 100%;
+                height: 115px;
+                background: no-repeat;
+                background-size: cover;
+                background-position: center center;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .main{
+        width: 1100px;
+        margin: 0 auto;
+        margin-top:10px;
+        position: relative;
+    }
+}
+.serviceWrap{
+    width: 100%;
+    height: auto;
+    //overflow: hidden;
+    display: flex;
+    padding-bottom:30px;
+    .viedoWrap{
+        width:540px;
+        height: 515px;
+       // height: 530px;
+        //float: left;
+    }
+    .rightWrap{
+        width:560px;
+        //height: 515px;
+        padding-left:35px;
+        //float: left;
+        h3{
+            font-size: 28px;
+            color: #333333;
+            padding-bottom: 20px;
+        }
+        .priceBox{
+            //width: 230px;
+            padding-right: 20px;
+            //height: 110px;
+            height: 80px;
+            position: relative;
+            margin:10px 0px 20px 0px;
+            border:1px solid #B8B8B8;
+            border-radius: 6px;
+            padding-left: 20px;
+            float: left;
+            i.pricePos{
+                position: absolute;
+                display: block;
+                background-color: #fff;
+                top:-15px;
+                left:30px;
+                padding:2px 10px;
+                font-style: normal;
+                color: #B8B8B8;
+                font-size: 18px;
+            }
+            .price1{
+                padding:10px 0px 5px 0px;
+                span{
+                    display: inline-block;
+                    margin-right: 5px;
+                    font-size: 18px;
+                    color: #565656;
+                }
+                i{
+                    font-style: normal;
+                    color: #8b8b8b;
+                    text-decoration: line-through;
+                }
+                &.custom-price1{
+                    i{
+                        text-decoration: none;
+                    }
+                }
+            }
+            .price2{
+                padding:0px 0px 0px 0px;
+                margin-top: -9px;
+                label{
+                    float: left;
+                    font-size: 18px;
+                    margin-top: 13px;
+                    font-weight: bold;
+                }
+                span{
+                    float: left;
+                    display: inline-block;
+                    margin-right: 5px;
+                    font-size: 34px;
+                    color: #FF6845;
+                    
+                }
+                i{
+                    float: left;
+                    font-style: normal;
+                    color: #FF6845;
+                    font-size: 22px;
+                    margin-top:10px;
+                }
+            }
+        }
+        
+    }
+}
+.typeBox{
+    width:100%;
+    //height: 110px;
+    overflow: hidden;
+    span{
+        display: inline-block;
+        width: 120px;
+        height: 40px;
+        line-height: 40px;
+        color: #FF6845;
+        border:1px solid #FF6845;
+        text-align: center;
+        border-radius: 5px;
+        margin-right:15px;
+        margin-bottom: 11px;
+        font-size: 16px;
+        cursor:default;
+        overflow: hidden;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+    span:nth-of-type(4n){
+        margin-right:0px;
+    }
+    span.selected{
+        background-color: #FF6845;
+        color: #fff;
+    }
+}
+.appointmentBtn{
+    display: inline-block;
+    width: 230px;
+    height: 60px;
+    line-height: 60px;
+    color: #fff;
+    background-color: #FF6845;
+    text-align: center;
+    font-size: 24px;
+    border-radius: 6px;
+    //margin-bottom:40px;
+    margin-top: 20px;
+    float: right;
+    cursor: pointer;
+}
+.botCon{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    i{
+        float: left;
+        font-style: normal;
+    }
+    i.qqicon{
+        color: #5698CD;
+        font-size: 24px;
+    }
+    i.kf{
+        font-size: 16px;
+        margin:0px 25px 0px 15px;
+        //margin-bottom: 20px;
+    }
+    i.telicon{
+        color: #3b982d;
+        font-size: 24px;
+    }
+    span{
+        color: #565656;
+        font-size: 16px;
+        //margin:0px 25px 0px 15px;
+        margin: 1px 20px 0px 10px;
+        float: left;
+    }
+    .info{
+        clear: both;
+        font-size: 16px;
+        color: #565656;
+        text-align: left;
+        padding-top:5px;
+        width: 100%;
+        //height: 60px;
+        line-height: 30px;
+        //@include line_over2;
+        span{
+            color: #333333;
+            margin:0px 0px 0px 0px;
+            font-weight: bold;
+        }
+    }
+}
+.appointmentWrap{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top:0px;
+    left:0px;
+    text-align: center;
+    background: rgba(0,0,0,0.2);
+    z-index: 900;
+    .appointmentBox{
+        width: 900px;
+        height: 700px;
+        padding:0px 0px;
+        position: absolute;
+        top:50%;
+        left:50%;
+        margin-left:-450px;
+        margin-top:-350px;
+        background-color: #fff;
+        border-radius: 8px;
+        h3{
+            text-align: center;
+            color: #333333;
+            font-size: 24px;
+            padding:40px 0px 20px 0px;
+        }
+        i.closeBtns{
+            position: absolute;
+            top:20px;
+            right:30px;
+            display: block;
+            font-style: normal;
+            font-size: 25px;
+            width: 30px;
+            height: 30px;
+            border: 1px solid #ababab;
+            color: #ababab;
+            border-radius: 100%;
+            text-align: center;
+            line-height: 30px;
+            cursor: pointer;
+        }
+        .serviceList{
+            width: 100%;
+            height: auto;
+            overflow: hidden;
+            text-align: left;
+            padding:0px 60px;
+            p{
+               font-size:20px;
+               color: #565656; 
+            }
+            span{
+               display: inline-block;
+                width: 120px;
+                height: 40px;
+                line-height: 40px;
+                color: #FF6845;
+                border:1px solid #FF6845;
+                text-align: center;
+                border-radius: 5px;
+                margin:10px 0px 30px 0px;
+                font-size: 16px;
+                cursor:default; 
+            }
+        }
+        .formRow{
+            width: 100%;
+            height: auto;
+            overflow: hidden;
+            text-align: left;
+            position: relative;
+            margin-bottom: 16px;
+            padding:0px 60px;
+            span{
+                position: absolute;
+                top:1px;
+                left:40px;
+                //float: left;
+                width: 20px;
+                color: #FF6845;
+                margin: 15px 0px 0px 0px;
+            }
+            input{
+                //float: left;
+                width: 760px;
+                border:1px solid #e5e5e5;
+                height: 50px;
+                font-size: 18px;
+                color: #878787;
+                border-radius: 6px;
+                padding-left:10px;
+            }
+            textarea{
+                text-align: left;
+                width: 760px;
+                border:1px solid #e5e5e5;
+                height: 190px;
+                font-size: 18px;
+                color: #878787;
+                border-radius: 6px;
+                padding:10px 0px 0px 10px;
+            }
+        }
+        .submitBtns{
+            display: block;
+            width: 300px;
+            height: 50px;
+            line-height: 50px;
+            color: #fff;
+            background-color: #FF6845;
+            text-align: center;
+            font-size: 20px;
+            border-radius: 6px;
+            margin:40px auto 10px auto;
+            cursor: pointer;
+        }
+    }
+}
+.fold{
+    width: 100%;
+    height: 28px;
+    background-color: #d9d9d9;
+    border-radius: 5px;
+    text-align: center;
+    @include flexbox2(center,center,center,center)
+    font-size: 12px;
+    color: #808080;
+    cursor: pointer;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    i{
+        font-weight: bold;
+        margin-top: 2px;
+        margin-right: 5px;
+    }
+}
+.bottomName,.bottomNameImg{
+    width: 540px;
+    height: 100px;
+    margin-top: -100px;
+}
+.bottomName{
+    position: relative;
+    font-size: 44px;
+    color: #fff;
+    .nameBox{
+        width: 200px;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        padding-top: 23px;
+        text-align: center;
+        //display: none;
+    }
+    .djsMask{
+        width: 200px;
+        height: 100%;
+        position: absolute;
+        left: 0;
+    }
+    .projectNameBox{
+        width: 320px;
+        height: 100%;
+        position: absolute;
+        right: 0;
+        padding-top: 25px;
+        text-align: center;
+        span{
+            font-size: 38px;
+        }
+    }
+}
+.logoIcon{
+    //margin-top: -100px;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+}
+.play{
+    position: absolute;
+    left: 231px;
+    top: 219px;
+    cursor: pointer;
+}
+.djsMask{
+    text-align: center;
+    .title{
+        font-size: 34px;
+        margin-top: 15px;
+        img{
+            width: 160px;
+        }
+    }
+}
+.djs{
+    //width:2.6rem;
+    //float: right;
+    @include flexbox2(center,center,center,center);
+    position: absolute;
+    width: 100%;
+    bottom: 17px;
+    //margin-top:6px;
+    .txt{
+        float: left;
+        color: #fff;
+        font-style: normal;
+        font-size: 14px;
+        margin-top:-2px;
+        display: block;
+    }
+    i{
+        float: left;
+        color: #fff;
+        font-size: 14px;
+        font-style: normal;
+        display: block;
+        margin:0px 1px 0px 1px;
+    }
+    span{
+        float: left;
+        color: #fff;
+        font-size:16px;
+        display: inline-block;
+        background: rgba(0,0,0,0.5);
+        padding:2px 1px;
+        border-radius: 2px;
+        height:20px;
+        line-height:16px;
+        text-align: center;
+    }
+    .td{
+        padding:0px 4px;
+        margin-right:2px;
+        line-height: 20px;
+    }
+    .td2{
+        padding:0px 4px;
+        line-height: 20px;
+    }
+}
+.customPrice2{
+    span{
+        font-size: 25px !important;
+        margin-top: 6px;
+    }
+}

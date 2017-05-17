@@ -1,0 +1,1 @@
+webpackJsonp([18],{521:function(n,t,o){"use strict";n.exports={path:"rankingList",getComponent:function(n,t){o.e(26,function(n){t(null,o(520))})}}},523:function(n,t,o){"use strict";n.exports={path:"ruiliModel",getComponent:function(n,t){o.e(25,function(n){t(null,o(522))})}}}});

@@ -1,0 +1,440 @@
+@charset 'utf-8';
+@import '../global.scss';
+.bgSet{
+    width: 100%;
+    text-align: center;
+    position: relative;
+    img{
+        display: block;
+    }
+}
+.section{
+    width: 100%;
+   margin:0 auto;
+   min-width: 1100px;
+   text-align: center;
+   position:relative;
+   margin-top:-50px;
+   &:nth-of-type(1){
+       margin-top:0;
+   }
+    
+}
+.sectionCon{
+   width: 1100px;
+   margin:0 auto;
+   text-align: center;
+   
+}
+.fir{
+    height: 1370px;
+    padding-top:85px;
+    text-align: center;
+    position: relative;
+    background:url(../../style/img/arandActivity/rankKingList/firBg.png) no-repeat center center;
+    .desCon{
+        font-size: 20px;
+        color:white;
+        margin-top:78px;
+        line-height: 35px;
+        padding:0 36px;
+        .boldFir{
+            font-size: 22px;
+            font-weight: 600;
+        }
+    }
+}
+.firVedio{
+    width: 842px;
+    height: 482px;
+    background:white;
+    margin:0 auto;
+    margin-top:20px;
+    position: relative;
+    img{
+        &:nth-of-type(1){
+           cursor: pointer;
+            width: 100%;
+            height: 100%; 
+        }
+        &:nth-of-type(2){
+           cursor: pointer;
+           position: absolute;
+           left: calc(50% - 38px);
+           top: calc(50% - 38px);
+        }
+    }
+    div{
+        width: 100%;
+        height: 100%;
+        display: none;
+    }
+}
+.sec{
+    height: 998px;
+    background:url(../../style/img/arandActivity/rankKingList/secBg.png) no-repeat center center;
+    padding-top:195px;
+}
+.sectionCon{
+    position: relative;
+    .whBg{
+        width: 1100px;
+        border-radius: 10px;
+        background-color:white;
+        padding:22px 12px;
+    }
+    p{
+        font-size: 16px;
+        color:#f35b12;
+        line-height: 32px;
+        text-align: left;
+        text-indent: 2em;
+    }
+    .ul{
+        display: block;
+        margin-top:34px;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+.thr{
+    height: 1432px;
+    padding-top:185px;
+    background:url(../../style/img/arandActivity/rankKingList/threeBg.png) no-repeat center center;
+    color:#f35b12;
+}
+.parkImg{
+    margin:0 auto;
+    width: 493px;
+    height: 185px;
+    margin-top:10px;
+}
+.wrapBor{
+    padding:3px;
+    width: 100%;
+    padding:3px;
+    background-color:white;
+    margin-top:15px;
+}
+.fontBig{
+    p{
+        font-size: 18px;
+        line-height: 35px;
+    }
+}
+.wrapSection{
+    width: 100%;
+    border:5px solid #ef4230;
+    background-color:#fff;
+    text-align: left;
+    .title{
+        height: 60px;
+        line-height: 60px;
+        text-indent: 0;
+        margin-left: -5px;
+        background:url(../../style/img/arandActivity/rankKingList/titleCommon.jpg) no-repeat left center;
+        color:white;
+        padding-left: 23px;
+    }
+    .flexCss{
+        display: flex;
+        padding:0 8px 20px 10px;
+        justify-content: space-between;
+        ul{
+            display: block;
+            text-align: left;
+            width: 432px;
+            li{
+                display: block;
+                height: 50px;
+                width: 100%;
+                padding-left:80px;
+                text-align: left;
+                line-height: 25px;
+                margin:25px 0;
+                position: relative;
+                &:nth-last-of-type(1){
+                    margin-bottom: 0;
+                }
+                &.line50{
+                    line-height: 50px;
+                }
+                &.line26{
+                    line-height: 22px;
+                    margin-top:-6px;
+                }
+                span{
+                    font-size: 16px;
+                }
+                b{
+                    display: block;
+                    width: 50px;
+                    height: 50px;
+                    text-align: center;
+                    line-height: 50px;
+                    background-color:#f35b12;
+                    border-radius: 50%;
+                    color:white;
+                    position: absolute;
+                    left: 0;
+                    font-size: 17px;
+                    font-weight: 500;
+                }
+            }
+            &.scaleUl{
+                width: 440px;
+                li{
+                    margin:8px 0;
+                    padding-left: 72px;
+                    b.two{
+                        line-height: 19px;
+                        padding-top:6px;
+                        box-sizing: border-box; 
+                    }
+                }
+            }
+            &.schoolSec{
+                width: 490px;
+            }
+        }
+    }
+}
+.emphasizeCss{
+    font-size: 18px;
+    font-weight: 600;
+}
+.felxCssTwo{
+    height: 336px;
+    display: flex;
+    justify-content: space-between;
+    .wrapSection{
+        height: 315px;
+    }
+    .wrapBor{
+        width: 525px;
+    }
+    font-size:16px;
+    color:#f35b12;
+    p{
+        text-indent: 0;
+        padding-left: 10px;
+    }
+    
+}
+.four{
+    width: 100%;
+    height: 1082px;
+    background: url(../../style/img/arandActivity/rankKingList/fourBg.png) no-repeat center center;
+    padding-top: 255px;
+}
+.rank-swiper-container{
+    width: 1100px;
+    margin: 0 auto;
+    position: relative;
+}
+:global{
+    .rank-swiper-container{
+        .swiper-button-next, .swiper-button-prev{
+            top: 310px;
+        }
+        .swiper-button-prev{
+            left: -50px;
+        }
+        .swiper-button-next{
+            right: -50px;
+        }
+        .swiper-container {
+            width: 100%;
+            //height: 300px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .swiper-slide {
+            background-size: cover;
+            background-position: center;
+            width: 1100px !important;
+            @include flexbox2(justify,space-between,center,center);
+            @include flexwrap();
+            &>div{
+                width: 200px;
+                height: 300px;
+                margin-top: 20px;
+                position: relative;
+                &:nth-of-type(1),
+                &:nth-of-type(2),
+                &:nth-of-type(3),
+                &:nth-of-type(4),
+                &:nth-of-type(5){
+                    margin-top: 0;
+                }
+                img{
+                    width: 200px;
+                    height: 232px;
+                    display: block;
+                }
+                div{
+                    position: absolute;
+                    bottom: 0;
+                    width: 100%;
+                    background-color: #fff;
+                    padding: 10px 0;
+                    span{
+                        font-size: 20px;
+                        color: #f35b12;
+                        line-height: 1;
+                        font-weight: bold;
+                    }
+                    p{
+                        margin-top: 10px;
+                        font-size: 16px;
+                        color: #f35b12;
+                        line-height: 1;
+                    }
+                }
+            }
+        }
+        .gallery-top {
+            height: 620px;
+            width: 1100px;
+        }
+        .gallery-thumbs {
+            height: 195px;
+            box-sizing: border-box;
+            padding: 30px 0 0 0;
+            width: 100%;
+        }
+        .gallery-thumbs .swiper-slide {
+            width: 210px;
+            height: 100%;
+            opacity: 0.4;
+            //margin-right: 30px !important;
+        }
+        .gallery-thumbs .swiper-slide-active {
+            opacity: 1;
+        }
+    }
+}
+.five{
+    width: 100%;
+    height: 1330px;
+    padding-top:180px;
+    background:url(../../style/img/arandActivity/rankKingList/fiveBg.png) no-repeat center center;
+    .felxCssTwo{
+        height: 435px;
+    }
+    .imgS{
+        width: 504px;
+        height: 248px;
+    }
+    .wrapSection{
+        height: 415px;
+    }
+    .fiveTxt{
+        clear: both;
+        width: 100%;
+        margin-top:10px;
+    }
+    .wrapBor{
+        width: 540px;
+    }
+    .influnce{
+        margin-top:336px;
+        border-radius: 10px;
+        background-color:white ;
+        padding:15px;
+    }
+    font-size:16px;
+    color:#f35b12;
+    line-height: 22px;
+    
+}
+.six{
+    
+}
+.startLeft{
+    position:absolute;
+    width: 100px;
+    height: 100px;
+    left:-70px;
+    bottom:180px;
+    img{
+        width: 100px;
+        height: 100px;
+    }
+}
+.startRight{
+    position: absolute;
+    width: 184px;
+    height: 184px;
+    right:-41px;
+    bottom:-193px;
+    img{
+        width: 184px;
+        height: 184px;
+    }
+}
+.posFir{
+    position: absolute;
+    left: 300px;
+    top:350px;
+}
+.firPosLeft{
+    position: absolute;
+    left: 72px;
+    bottom:164px;
+}
+.threeLeftB{
+    position: absolute;
+    left: -50px;
+    bottom:-74px;
+}
+.threeRightB{
+    position: absolute;
+    right:0;
+    bottom:138px;
+}
+.fiveLeftPos{
+    position: absolute;
+    left:-70px;
+    top: 257px;
+    width: 105px;
+    height: 105px;
+}
+.fiveRightPos{
+    position: absolute;
+    right:312px;
+    top:-97px;
+    width: 98px;
+    height: 96px;
+}
+.fiveRightPosLitt{
+    position: absolute;
+    left: 49px;
+    top:42px;
+    width: 34px;
+    height: 34px;
+}
+.sixGreenPos{
+    position: absolute;
+    left:-83px;
+    top:192px;
+}
+.sixYelloPos{
+    position: absolute;
+    right:-74px;
+    top:415px;
+    width: 98px;
+    height: 94px;
+    
+}
+.rank-swiper-container {
+    p{
+        text-indent: 0;
+        text-align: center;
+    }
+    
+    
+}
+.rank-swiper-container{
+    width: 1100px;
+}

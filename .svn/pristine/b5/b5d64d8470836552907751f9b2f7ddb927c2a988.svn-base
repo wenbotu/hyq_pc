@@ -1,0 +1,42 @@
+@charset 'utf-8';
+.info-detail{
+    position: relative;
+    .crumbs{
+        font-size: 20px;
+        color: #333333;
+        width: 1100px;
+        margin: 0 auto;
+        margin-top: 30px;
+        a{
+            color: #333333;
+            &:hover{
+                color: #f74e47;
+            }
+        }
+        span{
+            color: #f74e47;
+        }
+    }
+    .main{
+        width: 670px;
+        margin: 0 auto;
+        padding-top: 30px;
+        padding-bottom: 40px;
+        .title{
+            font-size: 30px;
+            color: #222222;
+        }
+        p{
+            &:nth-of-type(2){
+                margin-top: 10px;
+                font-size: 18px;
+                color: #999999;
+                margin-bottom:30px;
+            }
+        }
+        img{
+            width: 100%;
+        }
+    }   
+}
+

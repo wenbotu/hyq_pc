@@ -1,0 +1,19 @@
+.home-swiper .swiper-button-prev{
+	background-image: url('../style/img/banner_prev.png');
+	left: 3.2rem;
+}
+.home-swiper .swiper-button-next{
+	background-image: url('../style/img/banner_next.png');
+	right: 3.2rem;
+}
+.home-swiper .swiper-button-prev,.home-swiper .swiper-button-next{
+	display: none;
+	width: 90px;
+	height: 90px;
+	background-color: #000;
+	opacity: 0.4;
+}
+.home-swiper .swiper-slide img{
+	width: 100%;
+	min-width: 1100px;
+}

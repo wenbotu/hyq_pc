@@ -1,0 +1,29 @@
+.hotmi_swiper{
+	width: 100%;
+	height: calc(100% - 80px);
+}
+.hotmi_swiper .swiper-pagination.swiper-pagination-bullets {
+   right:2rem;
+}
+ .hotmi_swiper .swiper-pagination-bullet{
+	background: transparent !important;
+}
+.hotmi_swiper .swiper-pagination span.swiper-pagination-bullet-active{
+   background:#222222  !important;
+   opacity: 0.3;
+}
+.hotmi_swiper .swiper-pagination .swiper-pagination-bullet{
+	background: transparent;
+}
+.backtopfull{
+	width: 0.8rem;
+	height: 0.8rem;
+    position:fixed;
+    bottom:1.5rem;
+    right:2.5rem;
+    cursor:pointer;
+    z-index:999;
+}
+.hotmi_swiper .swiper-container-vertical>.swiper-pagination-bullets .swiper-pagination-bullet{
+	margin: 0.1rem 0rem;
+}

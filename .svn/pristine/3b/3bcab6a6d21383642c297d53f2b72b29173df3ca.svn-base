@@ -1,0 +1,295 @@
+@charset 'utf-8';
+@import '../global.scss';
+.ruili-model{
+    .content1{
+        width: 100%;
+        background-image: url(../../style/img/arandActivity/ruiliModel/background_1.png); 
+        background-size: 100% auto;
+        .banner{
+            width: 100%;
+            padding-top: 50px;
+            padding-bottom: 100px;
+            text-align: center;
+        }
+        .screen1{
+            width: 840px;
+            margin: 0 auto;
+            padding-bottom: 50px;
+            .screen1-video{
+                margin-top: -5px;
+                height: 480px;
+                img{
+                    cursor: pointer;
+                }
+                div{
+                    width: 100%;
+                    height: 100%;
+                    display: none;
+                }
+            }
+        }
+        .screen2{
+            width: 1100px;
+            margin: 0 auto;
+            padding-bottom: 48px;
+            &>div{
+                width: 100%;
+                height: 553px;
+                background-image: url(../../style/img/arandActivity/ruiliModel/screen_2_bg.png);
+                background-size:cover;
+                position: relative;
+                .screen2-content{
+                    position: absolute;
+                    top: 66px;
+                    right: 0px;
+                    height: 430px;
+                    width: 698px;
+                    padding-right: 31px;
+                    @include flexbox-vertical-center();
+                    div{
+                        background-color: rgba(84,20,50,0.4);
+                        color: #fff;
+                        font-size: 20px;    
+                        padding: 10px 25px 15px 25px;
+                        text-align: justify;
+                        line-height: 40px;
+                    }
+                }
+            }
+        }
+        .screen3{
+            width: 1101px;
+            margin: 0 auto;
+            img{
+                display: block;
+            }
+        }
+    }
+    .content2{
+        width: 100%;
+        background-image: url(../../style/img/arandActivity/ruiliModel/background_2.jpg); 
+        background-size: 100% auto;
+        padding-bottom: 100px;
+        .screen8{
+            &>img{
+                display: block;
+                margin: 0 auto;
+            }
+            .screen8-content1{
+                width: 1100px;
+                height: 230px;
+                background-image: url(../../style/img/arandActivity/ruiliModel/screen_8_bg1.png);
+                background-size:cover;
+                margin: 0 auto;
+                padding: 20px;
+                div{
+                    width: 100%;
+                    height: 100%;
+                    background-color: rgba(84,20,50,0.4);
+                    position: relative;
+                    @include flexbox-vertical-center();
+                    padding-right: 60px;
+                    p{
+                        font-size: 20px;
+                        color: #fff;
+                        line-height: 40px;
+                        margin-left: 50px;
+                        width: 785px;
+                    }
+                    img{
+                        margin-left: 53px;
+                    }
+                }
+            }
+            .screen8-content2{
+                width: 1100px;
+                height: 290px;
+                background-image: url(../../style/img/arandActivity/ruiliModel/screen_8_bg2.png);
+                background-size:cover;
+                margin: 50px auto auto auto;
+                padding: 25px 20px;
+                div{
+                    width: 100%;
+                    height: 100%;
+                    background-color: rgba(84,20,50,0.4);
+                    position: relative;
+                    @include flexbox-vertical-center();
+                    p{
+                        font-size: 20px;
+                        color: #fff;
+                        line-height: 40px;
+                        margin-left: 28px;
+                        width: 686px;
+                        display: block;
+                    }
+                    img{
+                        margin-left: 37px;
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}
+.ruili-swiper{
+    img{
+        display: block;
+        margin: 0 auto;
+    }
+    .ruili-swiper-container{
+        //height: 715px;
+        //width: 840px;
+        width: 100%;
+        position: relative;
+    }
+    width: 1155px;
+    margin: 0 auto;
+    //padding-bottom: 145px;
+}
+.content2 .ruili-swiper:last-child{
+    //padding-bottom: 65px;
+}
+:global{
+    .ruili-swiper-container{
+        .swiper-button-next, .swiper-button-prev{
+            top: 250px;
+        }
+        .swiper-button-prev{
+            left: 30px;
+        }
+        .swiper-button-next{
+            right: 30px;
+        }
+        .swiper-container {
+            width: 100%;
+            //height: 300px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .swiper-slide {
+            background-size: cover;
+            background-position: center;
+        }
+        .gallery-top {
+            height: 550px;
+            width: 840px;
+        }
+        .gallery-thumbs {
+            height: 195px;
+            box-sizing: border-box;
+            padding: 30px 0 0 0;
+            width: 100%;
+        }
+        .gallery-thumbs .swiper-slide {
+            width: 210px;
+            height: 100%;
+            opacity: 0.4;
+            //margin-right: 30px !important;
+        }
+        .gallery-thumbs .swiper-slide-active {
+            opacity: 1;
+        }
+    }
+    
+    .pc-slide {
+        width: 1230px;
+        margin: 0 auto;
+        &>img{
+            display: block;
+            margin: 0 auto;
+        }
+    }
+    
+    .view,.view2,.view3,.view4{
+        position: relative;
+        .picture-box{
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 9999;
+        }
+        .swiper-container {
+            height: 550px;
+            width: 840px;
+            padding: 20px;
+            position: relative;
+            //background-image: url(../../style/img/arandActivity/ruiliModel/picture_box.png);
+        }
+        .arrow-left {
+            background: url(../../style/img/arandActivity/ruiliModel/index_tab_l.png) no-repeat left top;
+            position: absolute;
+            left: 70px;
+            top: 50%;
+            margin-top: -25px;
+            width: 24px;
+            height: 41px;
+            z-index: 10;
+        }
+        .arrow-right {
+            background: url(../../style/img/arandActivity/ruiliModel/index_tab_r.png) no-repeat left bottom;
+            position: absolute;
+            right: 70px;
+            top: 50%;
+            margin-top: -25px;
+            width: 24px;
+            height: 41px;
+            z-index: 10;
+        }
+    }
+    
+    .preview,.preview2,.preview3,.preview4{
+        width: 100%;
+        position: relative;
+        padding: 0 35px;
+        .swiper-container {
+            width: 100%;
+            height: 195px;
+            margin-left: 0px;
+            padding: 30px 0;
+        }
+        .swiper-slide {
+            //width: 87px;
+            //height: 82px;
+            width: 234px;
+            height: 136px;
+            //padding-right: 20px;
+            //margin-right: 30px;
+        }
+        .last-slide {
+            //width: 82px;
+            width: 214px;
+        }
+        .arrow-left {
+            background: url(../../style/img/arandActivity/ruiliModel/feel3.png) no-repeat left top;
+            position: absolute;
+            left: 0px;
+            top: 50%;
+            //margin-top: -9px;
+            width: 17px;
+            height: 29px;
+            z-index: 10;
+        }
+        .arrow-right {
+            background: url(../../style/img/arandActivity/ruiliModel/feel4.png) no-repeat left bottom;
+            position: absolute;
+            right: 0px;
+            top: 50%;
+            //margin-top: -9px;
+            width: 17px;
+            height: 29px;
+            z-index: 10;
+        }
+        img {
+            padding: 1px;
+            width: 212px;
+            height: 100%;
+            opacity: 0.6;
+        }
+        .active-nav img {
+            padding: 0;
+            //border: 1px solid #F00;
+            opacity: 1;
+        }
+    }
+    
+}

@@ -1,0 +1,440 @@
+@charset 'utf-8';
+@import "global.scss";
+:global{
+    .ant-tooltip-inner{
+        //background-color: #e95513;
+        font-size: 0.22rem;
+    }
+}
+.content{
+    //background:url(../style/img/hotFanNavtop.png) no-repeat left top;
+    -webkit-text-size-adjust:none;
+    .screen1{
+        width: 100%;
+        height: 8rem;
+        background-image: url(../style/img/hotman/screen_1.jpg); 
+        background-size: cover; 
+        text-align: center;
+        .screen1-title{
+            font-size: 50px;
+            color: #fff;
+            line-height: 1;
+            display: inline-block;
+            margin-top: 2.95rem;
+        }
+        &>div{
+            margin-top: 0.35rem;
+            @include flexbox2(center,center,center,center);
+            input{
+                width: 660px;
+                height: 70px;
+                //border: 1px solid #fff;
+                background-color: rgba(255,255,255,0.7);
+                color: #333333;
+                font-size: 22px;
+                padding-left: 20px;
+            }
+            ::-webkit-input-placeholder { /* WebKit browsers */  
+                color:#333333;  
+            }  
+            :-moz-placeholder { /* Mozilla Firefox 4 to 18 */  
+               color:#333333;   
+               opacity:1;  
+            }  
+            ::-moz-placeholder { /* Mozilla Firefox 19+ */  
+               color:#333333;   
+               opacity:1;    
+            }  
+            :-ms-input-placeholder { /* Internet Explorer 10+ */  
+               color:#333333;   
+               opacity:1;    
+            } 
+            button.consult{
+                width: 160px;
+                height: 70px;
+                background-color: #e95513;
+                display: inline-block;
+                font-size: 22px;
+                color: #fff;
+                cursor: pointer;
+            }
+            .contact{
+                margin-left: 0.1rem;
+                width: 70px;
+                height: 70px;
+                background-color: #e95513;
+                text-align: center;
+                img{
+                    width: 30px;
+                    height: 33px;
+                    margin-top: 0.1rem;
+                }
+                p{
+                    font-size: 14px;
+                    color: #fff;
+                    line-height: 1;
+                    white-space: nowrap;
+                }
+            }
+        }
+    }
+    .screen2{
+        width: 100%;
+        height: 7.93rem;
+        background-image: url(../style/img/hotman/screen_2.png); 
+        background-size: cover; 
+        position: relative;
+        z-index: -1;
+        .screen2-title{
+            color: #1e4b54;
+            font-size: 0.38rem;
+            position: absolute;
+            top: 0.55rem;
+            left: 4.13rem;
+        }
+        div{
+            position: relative;
+            width: 100%;
+            height: 100%;
+            p{
+                &:nth-of-type(1){
+                    font-size: 0.28rem;
+                    color: #333;
+                    font-weight: 700;
+                }
+                &:nth-of-type(2){
+                    font-size: 0.24rem;
+                    color: #333;
+                    margin-top: 0.1rem;
+                    line-height: 0.3rem;
+                }
+            }
+        }
+        img{
+            width: 0.65rem;
+            height: 0.59rem;
+        }
+        .dialog1{
+            width: 3.99rem;
+            height: 1.99rem;
+            background-image: url(../style/img/hotman/dialog_1.png); 
+            background-size: cover;
+            position: absolute;
+            left: 3.4rem;
+            top: 1.45rem;
+            div{
+                img{
+                    position: absolute;
+                    right: 0.38rem;
+                    top: -0.20rem;
+                }
+                padding: 0.3rem 0.28rem 0.52rem 0.5rem;
+            }
+        }
+        .dialog2{
+            width: 4.01rem;
+            height: 2.18rem;
+            background-image: url(../style/img/hotman/dialog_2.png); 
+            background-size: cover;
+            position: absolute;
+            left: 3.9rem;
+            bottom: 1.4rem;
+            div{
+                img{
+                    position: absolute;
+                    right: 0.38rem;
+                    bottom: -0.1rem;
+                }
+                padding: 0.65rem 0.17rem 0.48rem 0.48rem;
+            }
+        }
+        .dialog3{
+            width: 3.97rem;
+            height: 1.83rem;
+            background-image: url(../style/img/hotman/dialog_3.png); 
+            background-size: cover;
+            position: absolute;
+            right: 3.1rem;
+            top: 1.1rem;
+            div{
+                img{
+                    position: absolute;
+                    right: 0.4rem;
+                    top: -0.23rem;
+                }
+                padding: 0.26rem 0.23rem 0.6rem 0.46rem;
+            }
+        }
+        .dialog4{
+            width: 3.49rem;
+            height: 1.81rem;
+            background-image: url(../style/img/hotman/dialog_4.png); 
+            background-size: cover;
+            position: absolute;
+            right: 3.55rem;
+            bottom: 2.05rem;
+            div{
+                img{
+                    position: absolute;
+                    right: 0.26rem;
+                    bottom: -0.08rem;
+                }
+                padding: 0.50rem 0.3rem 0.28rem 0.45rem;
+            }
+        }
+    }
+    .screen3{
+        width: 100%;
+        height: 11.19rem;
+        background-image: url(../style/img/hotman/screen_3.png); 
+        background-size: cover; 
+        margin-top: -1.86rem;
+        z-index: 2;
+        padding-top: 1.72rem;
+        position: relative;
+        .title{
+            color: #106281;
+        }
+        div{
+            &:nth-of-type(2){
+                left: 4.09rem;
+                top: 3.02rem;
+            }
+            &:nth-of-type(3){
+                
+                right: 4.09rem;
+                top: 3.02rem;
+            }
+        }
+        .screen3-content{
+            width: 5.4rem;
+            height: 6.4rem;
+            position: absolute;
+            padding: 0.3rem 0.5rem 0 0.5rem;
+            text-align: center;
+            strong{
+                font-size: 0.24rem;
+                color: #222222;
+                margin-top: 0.1rem;
+                margin-bottom: 0.04rem;
+                display: inline-block;
+            }
+            p{
+                font-size: 0.2rem;
+                color: #434343;
+                line-height: 0.4rem;
+                text-align: left;
+            }
+            img{
+                width: 100%;
+            }
+        }
+    }
+    .screen4{
+        width: 100%;
+        height: 17.64rem;
+        background-image: url(../style/img/hotman/screen_4.png); 
+        background-size: cover; 
+        margin-top: -1.13rem;
+        padding-top: 1.49rem;
+        .title{
+            color: #751c4c;
+            margin-bottom: 0.75rem;
+        }
+        .screen4-content{
+            width: 11.2rem;
+            height: 2.95rem;
+            border: 0.04rem solid #d798ba;
+            margin: 0 auto;
+            margin-bottom: 0.3rem;
+            padding: 0.05rem;
+            &:nth-of-type(2){
+                position: relative;
+                &>img{
+                    position: absolute;
+                    right: -0.18rem;
+                    bottom: -0.26rem;
+                    width: 0.55rem;
+                    height: 0.85rem;
+                }
+            }
+            &:nth-of-type(4){
+                position: relative;
+                &>img{
+                    position: absolute;
+                    right: 5.1rem;
+                    bottom: -0.35rem;
+                    width: 0.86rem;
+                    height: 0.56rem;
+                }
+            }
+            .screen4-info{
+                width: 6.1rem;
+                height: 100%;
+                background-color: #fff;
+                padding: 0.33rem 0.2rem 0rem 0.2rem;
+                float: left;
+                p{
+                    &:nth-of-type(1){
+                        color: #333333;
+                        font-size: 0.24rem;
+                        span{
+                            font-size: 0.24rem;
+                            color: #fff;
+                            background-color: #b44481;
+                            padding: 0.05rem 0.18rem 0.02rem 0.05rem;
+                            margin-right: 0.1rem;
+                            display: inline-block;
+                        }
+                    }
+                    &:nth-of-type(2){
+                        font-size: 0.19rem;
+                        color: #333333;
+                        line-height: 0.35rem;
+                        margin-top: 0.1rem;
+                        span{
+                            color: #ff664a;
+                        }
+                    }
+                }
+                strong{
+                    font-size: 0.2rem;
+                    color: #333333;
+                    margin-top: 0.25rem;
+                    display: inline-block;
+                }
+            }
+            .screen4-img-box{
+                width: 4.9rem;
+                height: 100%;
+                float: left;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            &:nth-of-type(4),&:nth-of-type(5){
+                border: 0.04rem solid #ff5d5d;
+                p{
+                    &:nth-of-type(1){
+                        span{
+                            background-color: #ff5d5d;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .screen5{
+        width: 100%;
+        height: 13.99rem;
+        background-image: url(../style/img/hotman/screen_5.png); 
+        background-size: cover; 
+        margin-top: -1.52rem;
+        padding-top: 1.55rem;
+        .title{
+            color: #94350c;
+            margin-bottom: 0.73rem;
+        }
+        .hotmi-info{
+            width: 11rem;
+            height: 1.8rem;
+            //border: 1px solid red;
+            margin: 0 auto;
+            padding: 0.2rem 0.3rem 0rem 0.3rem;
+            color: #ea5514;
+            font-size: 0.24rem;
+            font-weight: bold;
+            line-height: 0.35rem;
+            margin-bottom: 0.84rem;
+        }
+        .hotman-info{
+            width: 11rem;
+            margin: 0 auto;
+            @include flexbox2(justify,space-between,center,center);
+            @include flexwrap();
+            .hotman{
+                width: 2.12rem;
+                height: 3.2rem;
+                margin-bottom: 0.3rem;
+                img{
+                    width: 100%;
+                }
+//              &>div{
+//                  @include flexbox2(justify,space-between,center,center);
+//                  width: 100%;
+//                  height: 0.6rem;
+//                  margin-top: -0.03rem;
+//                  padding-left: 0.12rem;
+//                  padding-right: 0.12rem;
+//                  background-color: #f9f9f9;
+//                  strong{
+//                      font-size: 0.22rem;
+//                      color: #333333;
+//                      font-weight: 400;
+//                  }
+//                  p{
+//                      font-size: 0.14rem;
+//                      color: #5e5e5e;
+//                      line-height: 0.24rem;
+//                      span{
+//                          color: #ff7449;
+//                      }
+//                  }
+//              }
+            }
+        }
+        margin-bottom:0.4rem;
+    }
+    .screen6{
+        width: 100%;
+        height: 9.85rem;
+        background-color: #f9f9f9;
+        padding-top: 0.45rem;
+        position: relative;
+        .title{
+            color: #333;
+            position: absolute;
+            width: 100%;
+            text-align: center;
+        }
+        img{
+            margin-top: -0.4rem;
+            width: 19.2rem;
+        }
+    }
+    .screen7{
+        width: 100%;
+        height: 6.29rem;
+        background-image: url(../style/img/hotman/screen_7.png); 
+        background-size: cover; 
+        padding-top: 0.45rem;
+    }
+    .screen8{
+        width: 100%;
+        height: 5.54rem;
+        background-image: url(../style/img/hotman/screen_8.png); 
+        background-size: cover; 
+        padding-top: 0.45rem;
+    }
+    .title{
+          text-align: center;
+          font-size: 0.4rem;
+          font-weight: bold;
+    }
+    .last-hotman{
+        background-color: #fff1eb;
+        @include flexbox2(center,center,center,center);
+        i{
+            display: block;
+            width: 0.25rem;
+            height: 0.25rem;
+            border-radius: 50%;
+            background-color: #f2936a;
+            margin-right: 0.23rem;
+            &:nth-of-type(3){
+                margin-right: 0rem;
+            }
+        }
+    }
+}

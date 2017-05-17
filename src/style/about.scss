@@ -1,0 +1,136 @@
+@charset 'utf-8';
+@import 'global.scss';
+.content{
+    position: relative;
+}
+.banner{
+    width: 100%;
+}
+.nav{
+    border-bottom: 1px solid #cbcbcb;
+    @include flexbox2(center,center,center,center);
+    a{
+        text-align: center;
+        line-height:50px;
+        width: 130px;
+        display: inline-block;
+        font-size: 16px;
+        color: #333333;
+        &:not(:last-child){
+            margin-right: 40px;
+        }
+    }
+    a.active{
+        color: #e73817;
+        position: relative;
+        &:after{
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 2px;
+            background-color: #e73817;
+            bottom: -1px;
+            left: 0;
+        }
+    }
+}
+.main{
+    width: 1100px;
+    margin: 0 auto;
+    margin-top: -5px;
+    margin-bottom: 60px;
+}
+
+.company-profile{
+    padding-top: 50px;
+    p{
+        text-indent: 2em;
+        font-size: 15px;
+        color: #171717;
+        line-height:32px;
+        text-align: justify;
+        //letter-spacing: 5px;
+    }
+    .title{
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 30px;
+        span{
+            font-size:26px;
+            color: #313131;
+            position: relative;
+            margin: 0 auto;
+            &:after{
+                position: absolute;
+                content: "";
+                width: calc(100% + 10px);
+                height: 2px;
+                background-color: #626262;
+                bottom: -7px;
+                left: -5px;
+            }
+        }
+    }
+    .award{
+        padding-top: 10px;
+        div{
+            @include flexbox2(justify,space-between,center,center);
+            &:nth-of-type(2){
+                margin-top: 2px;
+            }
+        }
+    }
+    .sendWord{
+        width: 100%;
+        height: 500px;
+        //background-image: url('../style/img/sendWord.png');
+        padding-top: 240px;
+        padding-left: 40px;
+        padding-right: 50px;
+        position: relative;
+        p{
+            text-indent: 0em;
+        }
+        span{
+            font-size: 24px;
+            color: #171717;
+            float: right;
+            margin-top: 35px;
+            position: relative;
+            &:before{
+                content: "";
+                width: 80px;
+                height: 1px;
+                position: absolute;
+                background-color: #4e4c4b;
+                top: 20px;
+                right: 95px;
+            }
+        }
+    }
+    .videoBox{
+        width: 100%;
+        height: 547px;
+        background-image: url('../style/img/video_bg.jpg');
+        //padding-top: 240px;
+        background-size: cover;
+        padding: 40px 135px;
+        position: relative;
+        top: 20px;
+        marging-bottom: 20px;
+        .playBox{
+            width: 100%;
+            height: 100%;
+            background-image: url('../style/img/boss_video_bg.jpg');
+            background-size: cover;
+            @include flexbox2(center,center,center,center);
+            cursor: pointer;
+        }
+        iframe{
+            width: 100%;
+            height: 100%;
+            display: none;
+            //opacity: 0;
+        }
+    }
+}

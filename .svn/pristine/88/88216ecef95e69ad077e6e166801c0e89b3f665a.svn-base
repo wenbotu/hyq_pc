@@ -1,0 +1,71 @@
+@charset 'utf-8';
+.teamIntroduction{
+    .founderBox{
+        width: 1100px;
+        height:262px;
+        border:1px solid #c9c9c9;
+        margin-top:20px;
+        img{
+            float:left;
+            width:260px;
+            height: 260px;
+        }
+        .foundertxt{
+            width:800px;
+            float:left;
+            padding:30px 25px 0px 30px;
+            h2{
+                font-size: 20px;
+                color: #313131;
+                line-height:36px;
+                font-weight: normal;
+            }
+            p{
+                color: #171717;
+                font-size: 15px;
+                line-height:34px;
+                padding:10px 0px 0px 0px;
+                text-align: justify;
+            }
+        }
+    }
+    ul.staffBox{
+        width: 1100px;
+        height: auto;
+        overflow: hidden;
+        li{
+            width: 540px;
+            height: 220px;
+            margin-right:20px;
+            float: left;
+            border:1px solid #c9c9c9;
+            margin-top:20px;
+            img{
+               float:left;
+               width: 182px; 
+               height: 218px;
+            }
+            .stafftxt{
+                float:left;
+                width:311px;
+                padding:10px 20px 0px 20px;
+                h3{
+                    font-size: 18px;
+                    color: #313131;
+                    line-height:34px;
+                    font-weight: normal;
+                }
+                p{
+                    color: #171717;
+                    font-size: 14px;
+                    line-height:30px;
+                    padding:10px 0px 0px 0px;
+                    text-align: justify;
+                }
+            }
+        }
+        li:nth-child(even){
+            margin-right:0px;
+        }
+    }
+}

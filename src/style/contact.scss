@@ -1,0 +1,78 @@
+@charset 'utf-8';
+@import "global.scss";
+.contact{
+   
+}
+.contactCon{
+    width: 1060px;
+    margin:0 auto;
+     margin-bottom:40px;
+    @include flexbox(row,nowrap,space-between);
+}
+.contactLeft{
+    display: block;
+    width: 260px;
+    padding-left:20px;
+    background: #f0f0f0;
+    box-shadow: 5px 7px 5px #dedede;
+    margin-top:40px;
+    p{
+        line-height: 38px;
+        font-size: 16px;
+        padding-right:20px;
+    }
+    padding-bottom:20px;
+    
+}
+.contactRight{
+    display: block;
+    width: 698px;
+    margin-top:42px;
+}
+.map{
+    width: 690px;
+    height: 450px;
+    border:4px solid #c3c3c3;
+    margin-top:20px;
+}
+.mapDes{
+    margin-top:16px;
+    p{
+        line-height: 26px;
+        font-size:14px;
+        color:#333333;
+    }
+}
+.title{
+    font-size: 20px;
+    color:#333333;
+    margin:10px 0 10px 0;
+    font-weight:600;
+}
+.weiboHref{
+    display: inline-block;
+    padding:0 6px;
+    height: 38px;
+    line-height: 38px;
+    background: #fff;
+    font-size:16px;
+    color:#333;
+    border:1px solid #d1d1d1;
+    padding-left: 40px;
+    background-color:#fff;
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    background-size:26px 22px;
+    margin-top:20px;
+}
+.erweima{
+    margin-top:0.18rem;
+    img{
+        width: 220px;
+        height: 220px;
+    }
+}
+.erweides{
+    text-align: center;
+    font-size: 0.20rem;
+}

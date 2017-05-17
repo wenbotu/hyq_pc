@@ -1,0 +1,23 @@
+.swiper-hofan-reset .swiper-pagination-bullet{
+	background: transparent !important;
+}
+.swiper-hofan-reset .swiper-pagination-bullet-active{
+	 background:#222222  !important;
+	 opacity: 0.3;
+}
+.swiper-container-vertical>.swiper-pagination-bullets{
+	position:'fixed' !important;
+	right:'2rem' !important;
+	
+}
+.hotFan-swiper-container .swiper-container-vertical>.swiper-pagination-bullets .swiper-pagination-bullet{
+	margin:0.1rem 0 !important;
+}
+.hotFan-swiper-container{
+	 width:100%;
+    height:100%;
+    minWidth:11rem;
+    minHeight:8.50rem;
+}
+ 
+

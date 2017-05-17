@@ -1,0 +1,113 @@
+@charset 'utf-8';
+@import 'global.scss';
+.morelist{
+    .crumbs{
+        font-size: 20px;
+        color: #333333;
+        width: 1100px;
+        margin: 0 auto;
+        padding-top: 30px;
+        a{
+            color: #333333;
+            &:hover{
+                color: #f74e47;
+            }
+        }
+        span{
+            color: #f74e47;
+        }
+    }
+    .more_main{
+        width: 1100px;
+        margin: 0 auto;
+        margin-top: 60px;
+        //height: calc(100% - 176px);
+    }
+    .more_information{
+        width: 780px;
+        height: auto;
+        position: relative;
+        margin-bottom: 40px;
+        img{
+           position: absolute;
+           left: 30px;
+           top: -15px; 
+           width: 127px;
+           height: 46px;
+        }
+        .more{
+            width: 100%;
+            height: 40px;
+            background-color: #f0f0f0;
+            line-height: 40px;
+            text-align: right;
+            font-size: 16px;
+            color: #222222;
+        }
+        ul.more_ul{
+            text-align: left;
+            li.more_li{
+                font-size: 18px;
+                color: #222222;
+                margin-top: 23.5px;
+                padding-left: 30px;
+                padding-right: 20px;
+                div.more_item{
+                    width: 500px;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    display: inline-block;
+                    i{
+                        color:#dc3c23;
+                        margin-right: 5px;
+                        font-size: 18px;
+                    }
+                    a{
+                        //color: #222222;
+                    }
+                }
+                span{
+                    float: right;
+                    color: #555;
+                }
+                &:hover{
+                    a.more_link,span{
+                        color: #f74e47;
+                    }
+                }
+            }
+        }
+    }
+    .paging{
+        @include flexbox2(center,center,center,center);
+        margin-bottom: 50px;
+        ul{
+            li{
+                border:1px solid #d4d4d4;
+                border-radius:0px;
+                a{
+                    color: #f74e47;
+                }
+            }
+            li:hover{
+                background-color: #feedec;
+                border:1px solid #f74e47;
+                a{
+                    color: #f74e47;
+                }
+            }
+        }
+    }
+}
+.more-footer{
+    position:relative;
+    bottom:0;
+    width:100%;
+}
+//@media screen and (max-height:940px){
+//  .more-footer{
+//      position: relative;
+//  }
+//}
+
